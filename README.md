@@ -27,6 +27,22 @@ Daarna kleurt hij je plattegrond in: 🟢 groen = goed, 🔴 rood = slecht.
 
 > 💡 Elke wijziging die je in de code maakt, ververst meteen op je telefoon. Handig om mee te leren.
 
+### ☁️ Draai je via GitHub Codespaces?
+
+Dan staat je code in de cloud en kan je telefoon 'm **niet via je lokale WiFi** bereiken.
+Gebruik daarom **tunnel-modus** (loopt via internet i.p.v. je netwerk):
+
+```bash
+npm install
+npx expo start --tunnel      # of: npm run tunnel
+```
+
+- De eerste keer vraagt Expo om `@expo/ngrok` te installeren → antwoord **`y`** (ja).
+- Scan daarna de QR-code met **Expo Go** (Android) of de **Camera** (iPhone).
+- Je telefoon hoeft **niet** op hetzelfde netwerk te zitten als de Codespace.
+- De netwerkmetingen in de app gebruiken het netwerk van je **telefoon** — dus die
+  blijven gewoon kloppen, ook al draait de code in de cloud.
+
 ---
 
 ## 📖 Zo gebruik je de app
